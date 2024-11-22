@@ -9,9 +9,7 @@ const toggleDrawer = () => {
 </script>
 
 <template>
-  <nav
-    class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
-  >
+  <nav class="bg-[#1C2B4F]/30 fixed w-full z-20 top-0 start-0">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a
         href="https://www.balitower.co.id/"
