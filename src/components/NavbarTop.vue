@@ -1,15 +1,27 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import ToggleSwitch from 'primevue/toggleswitch'
 
 const isSidebarOpen = ref(false)
+const isDarkMode = ref(false)
 
 const toggleDrawer = () => {
   isSidebarOpen.value = !isSidebarOpen.value
 }
+
+watch(isDarkMode, (newVal) => {
+  if (newVal) {
+    document.documentElement.classList.add('dark') // Aktifkan mode dark
+    document.documentElement.classList.remove('light') // Nonaktifkan mode light
+  } else {
+    document.documentElement.classList.add('light') // Aktifkan mode light
+    document.documentElement.classList.remove('dark') // Nonaktifkan mode dark
+  }
+})
 </script>
 
 <template>
-  <nav class="bg-[#1C2B4F]/30 fixed w-full z-20 top-0 start-0">
+  <nav class="bg-[#1C2B4F]/50 fixed w-full z-20 top-0 start-0">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a
         href="https://www.balitower.co.id/"
@@ -20,7 +32,13 @@ const toggleDrawer = () => {
           >Balitower</span
         > -->
       </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+        <ToggleSwitch v-model="isDarkMode">
+          <template #handle="{ checked }">
+            <i :class="['!text-xs pi', { 'pi-sun': checked, 'pi-moon': !checked }]" />
+          </template>
+        </ToggleSwitch>
+
         <button
           type="button"
           @click="toggleDrawer"

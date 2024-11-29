@@ -23,7 +23,7 @@ const handleCheckboxChange12 = () => {
               <div class="group">
                 <label
                   for="cctv-name"
-                  class="block mb-2 text-sm font-semibold text-[#1C2B4F] dark:text-white dark:text-white"
+                  class="block mb-2 text-sm font-semibold text-[#1C2B4F] dark:text-white"
                   >Name*</label
                 >
                 <input
