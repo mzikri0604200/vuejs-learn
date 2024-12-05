@@ -1,6 +1,5 @@
 <script setup>
 import { ref, watch } from 'vue'
-import ToggleSwitch from 'primevue/toggleswitch'
 
 const isSidebarOpen = ref(false)
 const isDarkMode = ref(false)
@@ -21,7 +20,7 @@ watch(isDarkMode, (newVal) => {
 </script>
 
 <template>
-  <nav class="bg-[#1C2B4F]/50 fixed w-full z-20 top-0 start-0">
+  <nav class="bg-[#1C2B4F]/50 sticky w-full z-20 top-0 start-0">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a
         href="https://www.balitower.co.id/"
