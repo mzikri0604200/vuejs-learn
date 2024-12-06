@@ -14,6 +14,6 @@ const greeting = 'Hello World'
   <!-- <HeroSection /> -->
   <!-- <DataTable1 /> -->
   <!-- <MainForm /> -->
-  <OptionsApi />
+  <!-- <OptionsApi /> -->
   <CompositionApi />
 </template>
