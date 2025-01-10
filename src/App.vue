@@ -9,6 +9,7 @@ import RefReactive from './components/learn/RefReactive.vue'
 import ComputedProperties from './components/learn/ComputedProperties.vue'
 import ConditionalRe from './components/learn/ConditionalRendering.vue'
 import ListRendering from './components/learn/ListRendering.vue'
+import EventHandling from './components/learn/EventHandling.vue'
 // import ColumnGroup from 'primevue/columngroup' // optional
 // import Row from 'primevue/row' // optional
 const greeting = 'Hello World'
@@ -28,5 +29,6 @@ const greeting = 'Hello World'
 
   <!-- <ComputedProperties /> -->
   <!-- <ConditionalRe /> -->
-  <ListRendering />
+  <!-- <ListRendering /> -->
+  <EventHandling />
 </template>
