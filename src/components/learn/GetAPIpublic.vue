@@ -9,9 +9,7 @@ onMounted(async () => {
   try {
     const response = await fetch('http://openlibrary.org/people/george08/lists.json')
     const data = await response.json()
-
     lists.value = data.entries
-    console.log(lists)
   } catch (error) {
     console.error('Terjadi kesalahan:', error)
   } finally {
