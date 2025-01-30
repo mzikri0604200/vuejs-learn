@@ -14,9 +14,18 @@ import GetAPIpublic from './components/learn/GetAPIpublic.vue'
 import FormHandling from './components/learn/FormHandling.vue'
 import SlotButton from './components/learn/SlotsCard.vue'
 import SlotsCard from './components/learn/SlotsCard.vue'
+import ProvideInject from './components/learn/ProvideInject.vue'
 // import ColumnGroup from 'primevue/columngroup' // optional
 // import Row from 'primevue/row' // optional
-const greeting = 'Hello World'
+
+import { provide, ref } from 'vue'
+var val_provide = ref('Provide and Inject With Vue 2')
+
+const updateVal_provide = () => {
+  val_provide.value = 'Update Provide and Inject With Vue 3'
+}
+
+provide('key_provide', { val_provide, updateVal_provide })
 </script>
 
 <template>
@@ -37,7 +46,7 @@ const greeting = 'Hello World'
   <!-- <EventHandling /> -->
   <!-- <GetAPIpublic /> -->
   <!-- <FormHandling /> -->
-  <SlotsCard>
+  <!-- <SlotsCard>
     <template #image>
       <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
     </template>
@@ -47,5 +56,7 @@ const greeting = 'Hello World'
       chronological order.
     </template>
     <span>Read Me</span>
-  </SlotsCard>
+  </SlotsCard> -->
+
+  <ProvideInject />
 </template>
