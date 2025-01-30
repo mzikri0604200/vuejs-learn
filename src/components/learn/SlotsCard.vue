@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const props = defineProps(['since'])
+</script>
 
 <template>
   <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4 gap-3">
@@ -11,7 +13,7 @@
       <div class="p-5">
         <a href="#" v-if="$slots.title">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            <slot name="title"> Noteworthy technology acquisitions 2021 </slot>
+            <slot name="title" :since="'2025'"> Noteworthy technology acquisitions </slot>
           </h5>
         </a>
         <p v-if="$slots.body" class="mb-3 font-normal text-gray-700 dark:text-gray-400">

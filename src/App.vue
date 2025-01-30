@@ -41,7 +41,7 @@ const greeting = 'Hello World'
     <template #image>
       <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
     </template>
-    <template #title> Noteworthy technology acquisitions 2021 </template>
+    <template #title="{ since }">Noteworthy technology acquisitions {{ since }} </template>
     <template #body>
       Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
       chronological order.
