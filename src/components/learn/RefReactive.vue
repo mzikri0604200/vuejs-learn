@@ -6,6 +6,14 @@ const count = ref(1)
 function increment() {
   count.value++
 }
+// setTimeout(() => {
+//   count.value = 2
+// }, 1000)
+
+// let count = 1
+// function increment() {
+//   count++
+// }
 </script>
 
 <template>

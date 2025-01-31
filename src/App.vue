@@ -35,6 +35,7 @@ provide('key_provide', { val_provide, updateVal_provide })
   <!-- <MainForm /> -->
   <!-- <OptionsApi /> -->
   <!-- <CompositionApi /> -->
+  <RefReactive />
 
   <!-- <MainButton :title="greeting" /> -->
   <!-- <MainButton :title="`Submit`" :disabled="true" /> -->
@@ -44,7 +45,7 @@ provide('key_provide', { val_provide, updateVal_provide })
   <!-- <ConditionalRe /> -->
   <!-- <ListRendering /> -->
   <!-- <EventHandling /> -->
-  <!-- <GetAPIpublic /> -->
+  <GetAPIpublic />
   <!-- <FormHandling /> -->
   <!-- <SlotsCard>
     <template #image>
@@ -57,6 +58,5 @@ provide('key_provide', { val_provide, updateVal_provide })
     </template>
     <span>Read Me</span>
   </SlotsCard> -->
-
-  <ProvideInject />
+  <!-- <ProvideInject /> -->
 </template>
