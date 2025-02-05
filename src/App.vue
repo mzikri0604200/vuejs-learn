@@ -35,7 +35,7 @@ provide('key_provide', { val_provide, updateVal_provide })
   <!-- <MainForm /> -->
   <!-- <OptionsApi /> -->
   <!-- <CompositionApi /> -->
-  <RefReactive />
+  <!-- <RefReactive /> -->
 
   <!-- <MainButton :title="greeting" /> -->
   <!-- <MainButton :title="`Submit`" :disabled="true" /> -->
