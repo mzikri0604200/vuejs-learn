@@ -1,3 +1,4 @@
+import '@bhplugin/vue3-datatable/dist/style.css'
 import './assets/style.css'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
@@ -8,7 +9,6 @@ import OptionsApiC from './components/learn/OptionsApi.vue'
 import CompositionApiC from './components/learn/CompositionApi.vue'
 
 import ToggleSwitch from 'primevue/toggleswitch'
-
 const app = createApp(App)
 
 app

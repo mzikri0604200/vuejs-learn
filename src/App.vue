@@ -19,6 +19,7 @@ import ProvideInject from './components/learn/ProvideInject.vue'
 // import Row from 'primevue/row' // optional
 
 import { provide, ref } from 'vue'
+import GetAPIuser from './components/learn/GetAPIuser.vue'
 var val_provide = ref('Provide and Inject With Vue 2')
 
 const updateVal_provide = () => {
@@ -45,7 +46,8 @@ provide('key_provide', { val_provide, updateVal_provide })
   <!-- <ConditionalRe /> -->
   <!-- <ListRendering /> -->
   <!-- <EventHandling /> -->
-  <GetAPIpublic />
+  <!-- <GetAPIpublic /> -->
+  <GetAPIuser />
   <!-- <FormHandling /> -->
   <!-- <SlotsCard>
     <template #image>
