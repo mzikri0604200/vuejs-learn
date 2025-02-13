@@ -1,4 +1,5 @@
 <script setup>
+import '@bhplugin/vue3-datatable/dist/style.css'
 import MainForm from './components/MainForm.vue'
 import HeroSection from './components/HeroSection.vue'
 import NavbarTop from './components/NavbarTop.vue'
@@ -20,6 +21,7 @@ import ProvideInject from './components/learn/ProvideInject.vue'
 
 import { provide, ref } from 'vue'
 import GetAPIuser from './components/learn/GetAPIuser.vue'
+import GetAPIproduct from './components/learn/GetAPIproduct.vue'
 var val_provide = ref('Provide and Inject With Vue 2')
 
 const updateVal_provide = () => {
@@ -47,7 +49,8 @@ provide('key_provide', { val_provide, updateVal_provide })
   <!-- <ListRendering /> -->
   <!-- <EventHandling /> -->
   <!-- <GetAPIpublic /> -->
-  <GetAPIuser />
+  <!-- <GetAPIuser /> -->
+  <GetAPIproduct />
   <!-- <FormHandling /> -->
   <!-- <SlotsCard>
     <template #image>

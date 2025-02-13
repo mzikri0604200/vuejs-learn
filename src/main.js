@@ -1,4 +1,3 @@
-import '@bhplugin/vue3-datatable/dist/style.css'
 import './assets/style.css'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
