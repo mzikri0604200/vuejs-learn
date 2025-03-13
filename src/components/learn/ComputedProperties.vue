@@ -13,19 +13,19 @@ const increment = () => {
 }
 
 const fullName = () => {
-  console.log('fullName')
+  console.log('RUN')
   return author.books.length > 0 ? `${author.firstName} ${author.lastName}` : 'No books'
 }
 
-const fullName_compoted = computed(() => {
-  console.log('fullName_computed')
+const fullName_computed = computed(() => {
+  console.log('COMPUTED')
   return author.books.length > 0 ? `${author.firstName} ${author.lastName}` : 'No books'
 })
 </script>
 <template>
   <div class="max-w-screen-xl flex flex-wrap gap-3 mx-auto p-4 flex-col">
     <p>Author: {{ fullName() }}</p>
-    <p>Author: {{ fullName_compoted }}</p>
+    <p>Author: {{ fullName_computed }}</p>
     <div>
       <button
         @click="author.firstName = 'Jane'"
