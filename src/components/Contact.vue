@@ -28,7 +28,7 @@ const contact = reactive({
     <div>
       <label for="age">
         Age
-        <input type="age" id="age" v-model="contact.age" />
+        <input type="number" id="age" v-model="contact.age" />
       </label>
     </div>
     <div>
