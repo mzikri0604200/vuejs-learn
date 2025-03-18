@@ -10,6 +10,8 @@ export default defineConfig({
         index: 'index.html',
         hello: 'hello.html',
         style: 'style.html',
+        contact: 'contact.html',
+        product: 'product.html',
       },
     },
   },
