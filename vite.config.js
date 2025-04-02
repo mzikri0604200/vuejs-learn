@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         index: 'index.html',
         hello: 'hello.html',
+        counter: 'counter.html',
         style: 'style.html',
         contact: 'contact.html',
         product: 'product.html',
