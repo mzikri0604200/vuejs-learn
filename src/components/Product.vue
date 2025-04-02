@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch, watchEffect, onWatcherCleanup } from 'vue';
+import ProductDetail from './ProductDetail.vue';
 
 // const productId = ref('');
 const productId = ref('product1');
@@ -17,9 +18,11 @@ const product = ref(null);
 //     const response = await fetch(`/${newVal}.json`);
 //     product.value = await response.json();
 //   },
-//   { immediate: true }
+//   { immediate: true } watch langsung mengeksekusi saat pertama kali, ketika load data awal tanpa ada bantuan trigger dari user
+//   { once: true } watch hanya mengeksekusi sekali saja, tidak peduli ada perubahan atau tidak
 // );
 
+// watchEffect secara otomatis mengeksekusi setiap kali ada perubahan pada data dan bersifat immediate true
 watchEffect(async (newVal, oldVal) => {
   onWatcherCleanup(() => {
     console.log('cleanup');
@@ -42,9 +45,11 @@ watchEffect(async (newVal, oldVal) => {
     </select>
   </label>
   <div v-if="product">
-    <h2>Id : {{ product.id }}</h2>
+    <ProductDetail :id="product.id" :name="product.name" :price="product.price" />
+
+    <!-- <h2>Id : {{ product.id }}</h2>
     <h2>Name : {{ product.name }}</h2>
-    <p>Price : {{ product.price }}</p>
+    <p>Price : {{ product.price }}</p> -->
   </div>
 </template>
 
