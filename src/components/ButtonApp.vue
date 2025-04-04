@@ -1,5 +1,6 @@
 <script setup>
 import MyButton from './MyButton.vue';
+import Container from './Container.vue';
 
 const clickHandler = () => {
   alert('Button clicked!');
@@ -7,7 +8,18 @@ const clickHandler = () => {
 </script>
 
 <template>
-  <MyButton class="button" @click="clickHandler" name="bali" contoh="tower" />
+  <Container>
+    <template #header="counter">
+      <h1>Header {{ counter.counter }}</h1>
+    </template>
+
+    <template v-slot:default="getdata">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, culpa placeat? Optio distinctio dolorum aperiam tempora, amet eligendi exercitationem atque?</p>
+      <MyButton class="button" @click="clickHandler" :name="getdata.counter">Click Me!</MyButton>
+    </template>
+
+    <template #footer></template>
+  </Container>
 </template>
 
 <style>
