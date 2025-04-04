@@ -15,6 +15,7 @@ export default defineConfig({
         product: 'product.html',
         mote: 'mote.html',
         button: 'button.html',
+        home: 'home.html',
       },
     },
   },
