@@ -16,6 +16,7 @@ export default defineConfig({
         mote: 'mote.html',
         button: 'button.html',
         home: 'home.html',
+        profile: 'profile.html',
       },
     },
   },
